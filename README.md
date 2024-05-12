@@ -1,10 +1,16 @@
-# GRiSP io
-## Use your GRiSP 2 board with GRiSP.io
+# GRiSP.io
+This repository is dedicated exclusively to tracking issues for the [GRiSP.io](https://grisp.io) platform. Here, you can report bugs, request features, and discuss problems specifically related to GRiSP io. Please note that this is not the place for general discussions or questions about GRiSP io; it is solely for issue tracking.
+
+Before posting a new issue, kindly check if it has already been reported or addressed. This helps us avoid duplicates and respond more efficiently to your concerns.
+
+✨Thank you for contributing to the improvement of GRiSP.io!
+
+## How to use your GRiSP2 board with GRiSP.io
 ### Link a device
 #### Automatic linking (ethernet only)
-1. **Download** the prebuilt Application linked to your account on (grisp.io)[https://app.grisp.io/grisp-manager]
+1. **Download** the prebuilt Application linked to your account on [GRiSP.io](https://app.grisp.io/grisp-manager)
 2. **Prepare Your SD Card:** Extract the zip file onto a `Fat32` (on Mac is called Format `MS-DOS FAT`) formatted SD card and insert it into your `GRiSP2` board. 
-3. **Initiate Automatic Registration:** Connect your board to the internet via an ethernet cable. It will automatically link to your account, which you can verify under the Devices section on (grisp.io)[https://app.grisp.io/grisp-manager].
+3. **Initiate Automatic Registration:** Connect your board to the internet via an ethernet cable. It will automatically link to your account, which you can verify under the Devices section on [grisp.io](https://app.grisp.io/grisp-manager).
 
 #### Manual linking (Ethernet and Wi-Fi)
 **Prerequirement**: You need to setup a development Environment following this [guide](https://github.com/grisp/grisp/wiki/Setting-Up-a-Development-Environment)
@@ -19,14 +25,14 @@ In this tutorial, we will use the name `robot` for the project. The SD card path
    $ rebar3 grisp configure
    App name (robot)> # Enter the name of your application
    Erlang version (25)> # Specify the Erlang version to use, default is version 25
-   SD Card Path (/path/to/SD-card)> # Define the path to the SD card where the application will be stored
+   SD Card Path (/path/to/SD-card)> # Define the path to the SD card where the application will be deployed
    Use Wi-Fi ?(y/N)> y # Here if you want to use ethernet press "n"
    Use Network ?(y/N)> y
    Wi-Fi SSID (My Wifi)> my_wifi
    Wi-Fi Password (...)> my_psk
    Enable GRiSP.io integration ?(y/N)> y
    Do you need to link your GRiSP-2 board ?(y/N)> y
-   Please enter your personal device linking token (...)> MyToken
+   Please enter your personal device linking token (...)> MyToken # Enter your private token from GRiSP io account
    Enable Distributed Erlang ?(y/N)> y
    Erlang Cookie (grisp)> mycookie
    $ cd robot
